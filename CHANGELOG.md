@@ -8,5 +8,7 @@ and this project adheres to
 
 ## [Unreleased]
 
-[unreleased]:
-  https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...HEAD
+- Create a bootstrapped app using Angular CLI's `ng new`.
+- Set up an initial architecture.
+
+[unreleased]: https://github.com/davidomarf/job-listing/compare/master...develop
