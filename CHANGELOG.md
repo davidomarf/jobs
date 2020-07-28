@@ -11,5 +11,8 @@ and this project adheres to
 - Create a bootstrapped app using Angular CLI's `ng new`.
 - Set up an initial architecture.
   - Create a SCSS `variables` file with colors.
+- Set up the initial App Layout.
+  - Create a header with tilted rectangles as in the Figma project.
+  - Create a job listing container and cards with the appropiate proportions.
 
 [unreleased]: https://github.com/davidomarf/job-listing/compare/master...develop
