@@ -1,0 +1,44 @@
+@import 'variables';
+
+header {
+  position: relative;
+
+  height: 156px;
+  width: 100vw;
+
+  overflow: hidden;
+
+  background-color: $header-background-color;
+
+  div.rectangle {
+    position: absolute;
+
+    height: 824px;
+    width: 263px;
+
+    transform: translate(50%, -100%) rotate(45deg);
+
+    border-radius: 252px;
+    background-color: $header-accent-color;
+
+    &-1 {
+      top: 210px;
+      left: -0.73%;
+    }
+
+    &-2 {
+      top: 138px;
+      left: calc(-0.73% + 372px);
+    }
+
+    &-3 {
+      top: 656px;
+      left: calc(68.45% - 372px);
+    }
+
+    &-4 {
+      top: 656px;
+      left: 68.45%;
+    }
+  }
+}
