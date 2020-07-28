@@ -10,5 +10,6 @@ and this project adheres to
 
 - Create a bootstrapped app using Angular CLI's `ng new`.
 - Set up an initial architecture.
+  - Create a SCSS `variables` file with colors.
 
 [unreleased]: https://github.com/davidomarf/job-listing/compare/master...develop
