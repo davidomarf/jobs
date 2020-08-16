@@ -1,12 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { JobOffer } from '@models';
 
 import { JobListingService } from './job-listing.service';
-import { JobOffer } from '@models';
 
 @Component({
   selector: 'app-job-listing',
-  templateUrl: './job-listing.component.html',
   styleUrls: ['./job-listing.component.scss'],
+  template: `
+    <div class="job-listing-container">
+      <app-filter *ngIf="filters.length > 0" [(filters)]="filters"></app-filter>
+      <app-offer
+        *ngFor="let offer of offers"
+        [offer]="offer"
+        [(filters)]="filters"
+      ></app-offer>
+    </div>
+  `,
 })
 export class JobListingComponent implements OnInit {
   public offers: JobOffer[] = [];

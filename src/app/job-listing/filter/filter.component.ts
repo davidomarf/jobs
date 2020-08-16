@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter',
@@ -18,7 +18,8 @@ import { Component, Input } from '@angular/core';
   `,
 })
 export class FilterComponent {
-  @Input() public filters: string[] = ['Frontend', 'Senior'];
+  @Input() public filters: string[] = [];
+  @Output() public readonly filtersChange = new EventEmitter<string[]>();
 
   public remove(index: number) {
     this.filters.splice(index, 1);
