@@ -3,9 +3,19 @@
 div.offer {
   width: 100%;
   height: 152px;
-  
+
+  box-sizing: border-box;
+
   margin: 24px 0;
-  
+  padding: 32px;
+
   background: $card-background-color;
   border-radius: 5px;
+
+  img.company-image {
+    object-fit: cover;
+
+    height: 88px;
+    width: 88px;
+  }
 }
