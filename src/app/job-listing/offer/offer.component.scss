@@ -1,0 +1,11 @@
+@import 'variables';
+
+div.offer {
+  width: 100%;
+  height: 152px;
+  
+  margin: 24px 0;
+  
+  background: $card-background-color;
+  border-radius: 5px;
+}
