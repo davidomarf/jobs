@@ -18,7 +18,12 @@
     "strictBindCallApply": true,
     "strictNullChecks": false,
     "strictPropertyInitialization": false,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@environment": ["src/environments/environment"],
+      "@models": ["src/app/shared/models/index"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
