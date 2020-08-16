@@ -16,10 +16,12 @@ div.offer {
   border-radius: 5px;
 
   img.company-image {
-    object-fit: cover;
-
     height: 88px;
     width: 88px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
   }
 
   div.main-info {
