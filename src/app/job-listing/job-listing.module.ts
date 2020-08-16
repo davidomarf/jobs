@@ -4,6 +4,7 @@ import { JobListingComponent } from './job-listing.component';
 import { OfferComponent } from './offer/offer.component';
 import { TagsComponent } from './offer/tags/tags.component';
 import { InfoComponent } from './offer/info/info.component';
+import { FlagsComponent } from './offer/info/flags/flags.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { InfoComponent } from './offer/info/info.component';
     OfferComponent,
     TagsComponent,
     InfoComponent,
+    FlagsComponent,
   ],
   imports: [CommonModule],
   exports: [JobListingComponent],
