@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Flags } from '../../offer.component';
 
 @Component({
   selector: 'app-flags',
@@ -15,6 +16,6 @@ import { Component, Input } from '@angular/core';
   `,
 })
 export class FlagsComponent {
-  @Input() flags: any = {};
+  @Input() public readonly flags: Flags = {} as Flags;
   constructor() {}
 }

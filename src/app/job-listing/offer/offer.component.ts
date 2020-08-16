@@ -24,7 +24,7 @@ export class OfferComponent implements OnInit {
 
   public tags: string[] = [];
   public meta: string[] = [];
-  public flags: { isNew?: boolean; isFeatured?: boolean } = {};
+  public flags: Flags = {} as Flags;
 
   constructor() {}
 
@@ -65,4 +65,9 @@ type JobOffer = {
 
   languages: string[];
   tools: string[];
+};
+
+export type Flags = {
+  isNew: boolean;
+  isFeatured: boolean;
 };

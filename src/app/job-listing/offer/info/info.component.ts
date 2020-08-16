@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Flags } from '../offer.component';
 
 @Component({
   selector: 'app-info',
@@ -20,7 +21,7 @@ import { Component, Input } from '@angular/core';
 })
 export class InfoComponent {
   @Input() public readonly company = '';
-  @Input() public readonly flags = { isNew: false, isFeatured: false };
+  @Input() public readonly flags: Flags = {} as Flags;
   @Input() public readonly position = '';
   @Input() public readonly meta: string[] = [];
 }
