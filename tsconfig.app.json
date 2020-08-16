@@ -5,7 +5,8 @@
     "outDir": "./out-tsc/app",
     "types": [],
     "paths": {
-      "@environment": ["src/environments/environment"]
+      "@environment": ["src/environments/environment"],
+      "@models": ["src/app/shared/models/index"]
     }
   },
   "files": ["src/main.ts", "src/polyfills.ts"],

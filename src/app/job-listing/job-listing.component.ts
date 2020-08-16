@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { JobListingService } from './job-listing.service';
-import { JobOffer } from './offer/offer.component';
+import { JobOffer } from '@models';
 
 @Component({
   selector: 'app-job-listing',
