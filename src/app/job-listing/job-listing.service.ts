@@ -12,7 +12,7 @@ export class JobListingService {
 
   constructor(private readonly http: HttpClient) {}
 
-  public getOffers$(): Observable<JobOffer> {
-    return this.http.get<JobOffer>(this.path);
+  public getOffers$(): Observable<JobOffer[]> {
+    return this.http.get<JobOffer[]>(this.path);
   }
 }
