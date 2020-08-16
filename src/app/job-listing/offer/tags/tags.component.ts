@@ -13,6 +13,4 @@ import { Component, Input } from '@angular/core';
 })
 export class TagsComponent {
   @Input() public readonly tags: string[] = [];
-
-  constructor() {}
 }

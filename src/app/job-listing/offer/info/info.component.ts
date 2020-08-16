@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-info',
@@ -18,13 +18,9 @@ import { Component, OnInit, Input } from '@angular/core';
     </div>
   `,
 })
-export class InfoComponent implements OnInit {
+export class InfoComponent {
   @Input() public readonly company = '';
   @Input() public readonly flags = { isNew: false, isFeatured: false };
   @Input() public readonly position = '';
   @Input() public readonly meta: string[] = [];
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }
