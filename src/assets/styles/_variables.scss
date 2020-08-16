@@ -25,3 +25,9 @@ $accent-text-color: $breaker-bay;
 $new-flag-color: $breaker-bay;
 $featured-flag-color: $black;
 $tag-background-color: $aqua-haze;
+
+/* ------------------------------- Typography ------------------------------- */
+
+/* system typefaces */
+$sans-serif: 'Spartan', -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+  'Helvetica Neue', 'Lucida Grande', Arial, sans-serif !default;
