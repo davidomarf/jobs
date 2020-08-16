@@ -1,8 +1,9 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { JobOffer } from './offer/offer.component';
-import { Observable } from 'rxjs';
+import { Injectable } from '@angular/core';
 import { environment } from '@environment';
+import { Observable } from 'rxjs';
+
+import { JobOffer } from './offer/offer.component';
 
 @Injectable({
   providedIn: 'root',
