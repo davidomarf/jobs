@@ -1,0 +1,34 @@
+@import 'variables';
+
+div.offer {
+  width: 100%;
+  height: 152px;
+
+  box-sizing: border-box;
+
+  margin: 24px 0;
+  padding: 32px;
+
+  display: flex;
+  align-items: center;
+
+  background: $card-background-color;
+  border-radius: 5px;
+
+  img.company-image {
+    height: 88px;
+    width: 88px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+  }
+
+  app-info {
+    height: 100%;
+  }
+
+  app-tags {
+    margin-left: auto;
+  }
+}

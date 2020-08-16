@@ -1,0 +1,37 @@
+@import 'variables';
+div.main {
+  height: 100%;
+
+  margin-left: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  div.header {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    p.company {
+      margin-right: 24px;
+
+      color: $accent-text-color;
+    }
+  }
+
+  p.position {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  div.meta {
+    color: $gray;
+    span:not(:first-of-type)::before {
+      content: '·';
+      margin: 0 1em;
+    }
+  }
+}

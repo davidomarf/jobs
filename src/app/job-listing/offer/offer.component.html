@@ -1,0 +1,13 @@
+<div class="offer">
+  <img class="company-image" [src]="offer.logo" />
+
+  <app-info
+    [company]="offer.company"
+    [position]="offer.position"
+    [flags]="flags"
+    [meta]="[offer.postedAt, offer.contract, offer.location]"
+  >
+  </app-info>
+
+  <app-tags [tags]="tags"></app-tags>
+</div>
