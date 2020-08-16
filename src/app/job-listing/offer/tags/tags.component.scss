@@ -1,0 +1,21 @@
+@import 'variables';
+
+div.tags {
+  display: flex;
+
+  div.tag {
+    height: 32px;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+
+    font-size: 13px;
+
+    background-color: $tag-background-color;
+    color: $accent-text-color;
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+}
