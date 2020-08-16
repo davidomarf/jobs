@@ -23,12 +23,22 @@ export class OfferComponent implements OnInit {
   };
 
   public tags: string[] = [];
+  public meta: string[] = [];
 
   constructor() {}
 
   ngOnInit(): void {
-    const { role, level, tools, languages } = this.offer;
+    const {
+      role,
+      level,
+      tools,
+      languages,
+      contract,
+      postedAt,
+      location,
+    } = this.offer;
     this.tags = [role, level, ...tools, ...languages];
+    this.meta = [postedAt, contract, location];
   }
 }
 

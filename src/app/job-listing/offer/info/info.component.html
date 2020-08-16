@@ -1,0 +1,19 @@
+<div class="main-info">
+  <div class="top-info">
+    <p class="company-name">
+      {{ company }}
+    </p>
+    <div class="flags" *ngIf="isNew || isFeatured">
+      <div class="flag new" *ngIf="isNew">
+        New!
+      </div>
+      <div class="flag featured" *ngIf="isFeatured">
+        Featured
+      </div>
+    </div>
+  </div>
+  <p class="position-name">{{ position }}</p>
+  <div class="position-info">
+    <span *ngFor="let item of meta">{{ item }}</span>
+  </div>
+</div>
