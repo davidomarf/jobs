@@ -23,9 +23,10 @@ export class FilterComponent {
 
   public remove(index: number) {
     this.filters.splice(index, 1);
+    this.filtersChange.emit(this.filters);
   }
 
   public clear() {
-    this.filters = [];
+    this.filtersChange.emit([]);
   }
 }
