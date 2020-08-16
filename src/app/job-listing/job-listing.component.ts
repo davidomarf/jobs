@@ -10,6 +10,7 @@ import { JobOffer } from '@models';
 })
 export class JobListingComponent implements OnInit {
   public offers: JobOffer[] = [];
+  public filters: string[] = [];
 
   constructor(private readonly jobListingService: JobListingService) {}
 
