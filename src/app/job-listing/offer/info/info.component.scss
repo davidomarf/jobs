@@ -1,5 +1,5 @@
 @import 'variables';
-div.main-info {
+div.main {
   height: 100%;
 
   margin-left: 24px;
@@ -9,58 +9,25 @@ div.main-info {
 
   justify-content: space-between;
 
-  div.top-info {
+  div.header {
     display: flex;
     flex-direction: row;
 
     align-items: center;
 
-    p.company-name {
+    p.company {
       margin-right: 24px;
 
       color: $accent-text-color;
     }
-
-    div.flags {
-      display: flex;
-      flex-direction: row;
-
-      div.flag {
-        height: 24px;
-
-        padding: 0 1em;
-
-        display: flex;
-        align-items: center;
-
-        border-radius: 12px;
-
-        text-transform: uppercase;
-
-        font-size: 11px;
-        font-weight: bold;
-
-        color: $white;
-        &.new {
-          background-color: $new-flag-color;
-        }
-        &.featured {
-          background-color: $featured-flag-color;
-        }
-
-        &:not(:first-of-type) {
-          margin-left: 0.5rem;
-        }
-      }
-    }
   }
 
-  p.position-name {
+  p.position {
     font-size: 18px;
     font-weight: bold;
   }
 
-  div.position-info {
+  div.meta {
     color: $gray;
     span:not(:first-of-type)::before {
       content: '·';
