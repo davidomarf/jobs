@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Flags } from '../offer.component';
+import { Flags } from '@models';
 
 @Component({
   selector: 'app-info',

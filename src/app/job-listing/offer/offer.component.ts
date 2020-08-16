@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { JobOffer, Flags } from '@models';
 
 @Component({
   selector: 'app-offer',
@@ -32,28 +33,3 @@ export class OfferComponent implements OnInit {
     this.tags = [role, level, ...tools, ...languages];
   }
 }
-
-export type JobOffer = {
-  id: number;
-  company: string;
-  logo: string;
-
-  new: boolean;
-  featured: boolean;
-
-  position: string;
-  role: string;
-  level: string;
-
-  postedAt: string;
-  contract: string;
-  location: string;
-
-  languages: string[];
-  tools: string[];
-};
-
-export type Flags = {
-  isNew: boolean;
-  isFeatured: boolean;
-};
