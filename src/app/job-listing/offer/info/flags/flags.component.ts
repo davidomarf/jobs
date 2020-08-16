@@ -16,6 +16,5 @@ import { Flags } from '../../offer.component';
   `,
 })
 export class FlagsComponent {
-  @Input() public readonly flags: Flags = {} as Flags;
-  constructor() {}
+  @Input() public readonly flags!: Flags;
 }

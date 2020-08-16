@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+
 import { JobListingComponent } from './job-listing.component';
+import { FlagsComponent } from './offer/info/flags/flags.component';
+import { InfoComponent } from './offer/info/info.component';
 import { OfferComponent } from './offer/offer.component';
 import { TagsComponent } from './offer/tags/tags.component';
-import { InfoComponent } from './offer/info/info.component';
-import { FlagsComponent } from './offer/info/flags/flags.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,7 @@ import { FlagsComponent } from './offer/info/flags/flags.component';
     InfoComponent,
     FlagsComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
   exports: [JobListingComponent],
 })
 export class JobListingModule {}

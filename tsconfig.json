@@ -6,6 +6,7 @@
 */
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "target": "ES5",
     "lib": ["es2018", "dom", "dom.iterable"],
     "strictFunctionTypes": true,
