@@ -3,11 +3,11 @@
     <p class="company-name">
       {{ company }}
     </p>
-    <div class="flags" *ngIf="isNew || isFeatured">
-      <div class="flag new" *ngIf="isNew">
+    <div class="flags" *ngIf="flags.isNew || flags.isFeatured">
+      <div class="flag new" *ngIf="flags.isNew">
         New!
       </div>
-      <div class="flag featured" *ngIf="isFeatured">
+      <div class="flag featured" *ngIf="flags.isFeatured">
         Featured
       </div>
     </div>

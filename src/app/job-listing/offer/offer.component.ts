@@ -24,6 +24,7 @@ export class OfferComponent implements OnInit {
 
   public tags: string[] = [];
   public meta: string[] = [];
+  public flags: { isNew?: boolean; isFeatured?: boolean } = {};
 
   constructor() {}
 
@@ -36,9 +37,13 @@ export class OfferComponent implements OnInit {
       contract,
       postedAt,
       location,
+      new: isNew,
+      featured: isFeatured,
     } = this.offer;
-    this.tags = [role, level, ...tools, ...languages];
+
+    this.flags = { isNew, isFeatured };
     this.meta = [postedAt, contract, location];
+    this.tags = [role, level, ...tools, ...languages];
   }
 }
 

@@ -7,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
   @Input() public readonly company = '';
-  @Input() public readonly isNew = '';
-  @Input() public readonly isFeatured = '';
+  @Input() public readonly flags = { isNew: false, isFeatured: false };
   @Input() public readonly position = '';
   @Input() public readonly meta: string[] = [];
 
