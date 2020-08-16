@@ -10,6 +10,7 @@ div.offer {
   padding: 32px;
 
   display: flex;
+  align-items: center;
 
   background: $card-background-color;
   border-radius: 5px;
@@ -22,6 +23,8 @@ div.offer {
   }
 
   div.main-info {
+    height: 100%;
+
     margin-left: 24px;
 
     display: flex;
@@ -38,7 +41,7 @@ div.offer {
       p.company-name {
         margin-right: 24px;
 
-        color: $company-name-color;
+        color: $accent-text-color;
       }
 
       div.flags {
@@ -85,6 +88,27 @@ div.offer {
       span:not(:first-of-type)::before {
         content: '·';
         margin: 0 1em;
+      }
+    }
+  }
+
+  div.tags {
+    margin-left: auto;
+    display: flex;
+
+    div.tag {
+      height: 32px;
+      padding: 0 1em;
+      display: flex;
+      align-items: center;
+
+      font-size: 13px;
+
+      background-color: $tag-background-color;
+      color: $accent-text-color;
+
+      &:not(:last-child) {
+        margin-right: 1em;
       }
     }
   }
