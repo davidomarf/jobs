@@ -6,25 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./offer.component.scss'],
 })
 export class OfferComponent implements OnInit {
-  @Input() public readonly offer: JobOffer = {
-    id: 5,
-    company: 'Loop Studios',
-    logo: './images/loop-studios.svg',
-    new: true,
-    featured: true,
-    position: 'Software Engineer',
-    role: 'FullStack',
-    level: 'Midweight',
-    postedAt: '1w ago',
-    contract: 'Full Time',
-    location: 'Worldwide',
-    languages: ['JavaScript'],
-    tools: ['Ruby', 'Sass'],
-  };
+  @Input() public readonly offer!: JobOffer;
 
   public tags: string[] = [];
   public meta: string[] = [];
-  public flags: Flags = {} as Flags;
+  public flags!: Flags;
 
   constructor() {}
 

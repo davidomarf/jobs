@@ -21,7 +21,7 @@ import { Flags } from '../offer.component';
 })
 export class InfoComponent {
   @Input() public readonly company = '';
-  @Input() public readonly flags: Flags = {} as Flags;
+  @Input() public readonly flags!: Flags;
   @Input() public readonly position = '';
-  @Input() public readonly meta: string[] = [];
+  @Input() public readonly meta!: string[];
 }
