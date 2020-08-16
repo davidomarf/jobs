@@ -26,7 +26,10 @@ export class OfferComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const { role, level, tools, languages } = this.offer;
+    this.tags = [role, level, ...tools, ...languages];
+  }
 }
 
 type JobOffer = {
@@ -47,4 +50,4 @@ type JobOffer = {
 
   languages: string[];
   tools: string[];
-}
+};
