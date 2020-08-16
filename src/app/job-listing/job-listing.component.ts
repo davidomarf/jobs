@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JobOffer } from './offer/offer.component';
+import { JobListingService } from './job-listing.service';
 
 @Component({
   selector: 'app-job-listing',
@@ -6,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-listing.component.scss'],
 })
 export class JobListingComponent implements OnInit {
-  constructor() {}
+  public offers: JobOffer[] = [];
 
-  ngOnInit(): void {}
+  constructor(private readonly jobListingService: JobListingService) {}
+
+  ngOnInit(): void {
+    this.jobListingService.getOffers$().subscribe(console.log);
+  }
 }

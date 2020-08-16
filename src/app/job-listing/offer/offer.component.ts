@@ -33,7 +33,7 @@ export class OfferComponent implements OnInit {
   }
 }
 
-type JobOffer = {
+export type JobOffer = {
   id: number;
   company: string;
   logo: string;
