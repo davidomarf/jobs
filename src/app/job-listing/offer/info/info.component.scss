@@ -1,13 +1,17 @@
 @import 'variables';
-div.main {
-  height: 100%;
 
+div.main {
   margin-left: 24px;
 
   display: flex;
   flex-direction: column;
 
   justify-content: space-between;
+
+  div.header,
+  p.position {
+    margin-bottom: 1rem;
+  }
 
   div.header {
     display: flex;
@@ -28,6 +32,11 @@ div.main {
   p.position {
     font-size: 18px;
     font-weight: bold;
+
+    cursor: pointer;
+    &:hover {
+      color: $breaker-bay;
+    }
   }
 
   div.meta {
@@ -36,5 +45,12 @@ div.main {
       content: '·';
       margin: 0 1em;
     }
+  }
+}
+
+@media (max-width: $medium) {
+  div.main {
+    margin-left: 0;
+    padding-top: 1rem;
   }
 }
