@@ -15,6 +15,10 @@ div.offer {
   background: $card-background-color;
   border-radius: 5px;
 
+  &.featured {
+    border-left: 5px solid $breaker-bay;
+  }
+
   img.company-image {
     height: 88px;
     width: 88px;

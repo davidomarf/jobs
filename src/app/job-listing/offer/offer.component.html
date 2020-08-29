@@ -1,4 +1,4 @@
-<div class="offer">
+<div class="offer" [ngClass]="{ featured: offer.featured }">
   <img class="company-image" [src]="offer.logo" />
 
   <app-info
