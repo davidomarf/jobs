@@ -34,7 +34,7 @@ div.offer {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $medium) {
   div.offer {
     position: relative;
     width: 100%;
