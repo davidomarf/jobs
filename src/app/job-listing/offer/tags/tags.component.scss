@@ -35,3 +35,9 @@ div.tags {
     }
   }
 }
+@media (max-width: 800px) {
+  div.tags {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+}
